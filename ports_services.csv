@@ -1,0 +1,40 @@
+Port,Protocol,Service,Description
+20,TCP,ftp-data,FTP data transfer
+21,TCP,ftp,FTP control (command)
+22,TCP,ssh,Secure Shell (remote login)
+23,TCP,telnet,Telnet (unsecured remote login)
+25,TCP,smtp,Simple Mail Transfer Protocol
+53,UDP/TCP,domain,DNS (Domain Name System)
+67,UDP,dhcp-server,DHCP server
+68,UDP,dhcp-client,DHCP client
+69,UDP,tftp,Trivial File Transfer Protocol
+80,TCP,http,HTTP (web)
+110,TCP,pop3,Post Office Protocol v3
+111,TCP/UDP,rpcbind,RPC bind/sunrpc
+123,UDP,ntp,Network Time Protocol
+137,UDP,netbios-ns,NetBIOS name service
+138,UDP,netbios-dgm,NetBIOS datagram service
+139,TCP,netbios-ssn,NetBIOS session service
+143,TCP,imap,Internet Message Access Protocol
+161,UDP,snmp,Simple Network Management Protocol
+162,UDP,snmp-trap,SNMP trap
+389,TCP/UDP,ldap,Lightweight Directory Access Protocol
+443,TCP,https,HTTP over TLS/SSL
+445,TCP,microsoft-ds,SMB over TCP (Windows file sharing)
+514,UDP,syslog,Syslog (logging)
+587,TCP,smtp-submission,SMTP (message submission)
+631,TCP,ipp,Internet Printing Protocol
+636,TCP,ldaps,LDAP over SSL
+993,TCP,imaps,IMAP over SSL
+995,TCP,pop3s,POP3 over SSL
+1433,TCP,microsoft-sql-s,Microsoft SQL Server
+1521,TCP,oracle,Oracle database listener
+2049,TCP/UDP,nfs,Network File System
+3306,TCP,mysql,MySQL database
+3389,TCP,rdp,Remote Desktop Protocol (Microsoft)
+5432,TCP,postgresql,PostgreSQL database
+5900,TCP,vnc,VNC remote desktop
+6379,TCP,redis,Redis key-value store
+8080,TCP,http-alt,Alternative HTTP port (often web apps)
+8443,TCP,https-alt,Alternative HTTPS (often admin interfaces)
+9000,TCP,http-alt-9000,"Common for dev tools (e.g., SonarQube, PHP-FPM dashboards)"
