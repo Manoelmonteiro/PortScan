@@ -22,7 +22,7 @@ def scan_Port (alvo, portInitial, portEnd):
     print("Iniciando o scan de portas...")
     print("Port	             |  Protocol   |  Service	  |   Description\n")
     porta_desc = abre_arquivo_csv('ports_services.csv')
-    for port in range(portInitial, portEnd):
+    for port in range(portInitial, portEnd+1):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(0.5)
         try:
@@ -35,7 +35,7 @@ def scan_Port (alvo, portInitial, portEnd):
                 else:
                     print(f"Porta {port} esta aberta | Desconhecido | Desconhecido | Desconhecido")
                     pass
-        except exception as e:
+        except Exception as e:
             print(f"Erro ao checar porta {port}: {e}")
             pass
         finally:
